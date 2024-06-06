@@ -1,2 +1,2 @@
 # freeCodeCamp
-The coding done and learned from freecodecamp.com
+The coding done and learned from freeCodeCamp.org
