@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>DecisionHub's Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">DecisionHub's Survey</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" name="name" type="text" required placeholder="Enter your name" /></label>
+        <label id="email-label" for="email">Email: <input id="email" name="email" type="email" required placeholder="Enter Your Email"/></label>
+        <label id="number-label" for="number"> Age: <input id="number" name="number" min="10" max="100" type="number" required placeholder="Enter your Age"/></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">What's your current role?
+          <select id="dropdown" name="dropdown">
+            <option value="">(Select your current role)</option>
+            <option value="1">Student</option>
+            <option value="2">Full-time Job</option>
+            <option value="3">Part-time Job</option>
+            <option value="4">Intern</option>
+            <option value="5">Full-time Yapper</option>
+            <option value="6">Other</option>
+          </select>
+      </fieldset>
+      <fieldset>    
+        </label>
+        <legend>How would you like to have an app that helps you make decisions based of Game Theory? (required)</legend>
+        <label for="yes-choice"><input id="yes-choice" type="radio" name="decision-type" class="inline" checked value="sick"/> Sounds sick!</label>
+        <label for="no-choice"><input id="no-choice" type="radio" name="decision-type" class="inline" value="lame"/> Nah I don't really need it, I'm lame :(</label>
+      </fieldset>
+      <label> How would you use this app? (required)</label>
+     <label for="business">   <input id="business" class="inline" type="checkbox" name="how" value="Business"/> Business</label>
+        
+       <label for="school"> <input id="school" class="inline" type="checkbox" name="how" value="School"/> School</label>
+        <label for="personal"><input id="personal" class="inline" type="checkbox" name="how" value="Personal"/> Personal</label>
+        <label for="other">Other, if so how:
+          <textarea id="other" name="other" rows="3" cols="30" placeholder="I would like to use it to play in casinos..."></textarea>
+        </label>
+
+      <input type="submit" value="submit" id="submit" />
+    </form>
+  </body>
+</html>
